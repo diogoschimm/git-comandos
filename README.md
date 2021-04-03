@@ -1,6 +1,6 @@
 # Comandos do Git
 
-Sistema de controle de versões do git descentralizado
+Sistema de controle de versões descentralizado
 
 ## Instalação
 
