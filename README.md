@@ -84,6 +84,30 @@ Date:   Fri Apr 2 23:40:15 2021 -0400
     Arquivos
 ```
 
+## Alterando o Commit anterior
+
+Para alterar o comit anterior iremos usar o parametro --amend
+
+```console
+touch hmoe.html
+git add home.html
+git commit --amend -m "Arquivos Novos"
+```
+
+Se executarmos o git log iremos ver que só vamos ter um commit no log
+
+```console
+git log
+
+commit efc185c8f392c48b682608f08e690108da10b357 (HEAD -> master)
+Author: Diogo Schimmelpfennig <diogo@hotmail.com>
+Date:   Fri Apr 2 23:46:14 2021 -0400
+
+    Arquivos Novos
+```
+
+
+
 
 
 
