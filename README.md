@@ -1,5 +1,9 @@
 # Comandos do Git
 
+Sistema de controle de versões do git 
+
+## Criando um repositório git local
+
 Criando um repositório local, nesse momento será criado a pasta .git e uma branch local chamada master
 
 ```console
@@ -16,6 +20,8 @@ mkdir js
 touch css/styles.css
 touch js/scripts.js
 ```
+
+## Visualizando o status do repositório local
 
 Agora podemos analisar o status do repositório git com o seguinte comando
 
@@ -40,6 +46,8 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
+## Adicionando na Stage
+
 Devemos adicionar os arquivos para serem vistos pelo git, para isso iremos usar o comando add.
 
 ```console
@@ -52,6 +60,8 @@ ou
 git add <nomeArquivo>
 ```
 
+## Removendo da Stage
+
 Ao executarmos o add o git irá incluir nossos arquivo na Stage, se quisermos voltar os arquivos para o Working Dir devemos executar o seguinte comando
 
 ```console
@@ -60,11 +70,15 @@ ou
 git rm --cached <nomeArquivo>
 ```
 
+## Comitando Alteração para o repositório
+
 Após adicionar os arquivos na Stage, devemos envia-los para a HEAD, para isso vamos executar um Commit.
 
 ```console
 git commit -m "Mensagem do Commit"
 ```
+
+## Visualizando Logs de Commit
 
 Para visualizar o histórico de commits devemos executar o seguinte comando
 
