@@ -120,6 +120,63 @@ Date:   Fri Apr 2 23:46:14 2021 -0400
     Arquivos Novos
 ```
 
+## Revertendo Commits
+
+Vamos adicionar um novo arquivo chamado contato.html e fazer o commit dele, logo após vamos reverter esse commit.
+
+```console
+touch contato.html
+git add .
+git commit -m "Criação do arquivo contato.html"
+```
+
+Agora ao analisar o log teremos
+
+```console
+git log 
+
+commit 6c85191d88c8aaa26081bbcd659f784f9ca42f8e (HEAD -> master)
+Author: Diogo Schimmelpfennig <diogo@hotmail.com>
+Date:   Sat Apr 3 00:02:21 2021 -0400
+
+    Criação da página de contato
+
+commit efc185c8f392c48b682608f08e690108da10b357
+Author: Diogo Schimmelpfennig <diogo@hotmail.com>
+Date:   Fri Apr 2 23:46:14 2021 -0400
+
+    Arquivos Novos
+```
+
+Podemos analizar os dois commits com o comnado git log, sendo eles respectivamente os hashs 
+1º:  efc185c8f392c48b682608f08e690108da10b357
+Último: 6c85191d88c8aaa26081bbcd659f784f9ca42f8e
+
+Agora queremos voltar para o primeiro commit, para isso teremos duas possibilidades:
+1º possibilidade:
+Excluir o commit "Criação da página de contato" e manter somente o commit "Arquivos Novos"
+
+Para isso vamos usar o comando git reset
+```console
+git reset --soft 6c85191d88c8aaa26081bbcd659f784f9ca42f8e
+ou
+git reset --mixed 6c85191d88c8aaa26081bbcd659f784f9ca42f8e
+ou
+git reset --hard 6c85191d88c8aaa26081bbcd659f784f9ca42f8e
+ou
+git reset 6c85191d88c8aaa26081bbcd659f784f9ca42f8e 
+```
+
+2º possibilidade:
+Manter o commit "Criação da página de contato" e criar um novo commit revertendo o que está no commit 6c85191d88c8aaa26081bbcd659f784f9ca42f8e
+
+Para isso vamos usar o comando git revert
+
+```console
+git revert HEAD --no-edit
+```
+
+
 
 
 
