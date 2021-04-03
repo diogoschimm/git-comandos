@@ -1,6 +1,32 @@
 # Comandos do Git
 
-Sistema de controle de versões do git 
+Sistema de controle de versões do git descentralizado
+
+## Instalação
+
+https://git-scm.com/downloads
+
+```console
+git --version
+```
+
+## Configurando as opções de usuário e editor
+
+```console
+git config --global user.name "Diogo Schimm"
+git config --global user.email "diogo@hotmail.com"
+
+git config --global core.editor "code"
+```
+
+Para visualizar as configurações usamos os seguintes comandos
+
+```console
+git config user.name
+git config user.email
+ou
+git config --list
+```
 
 ## Criando um repositório git local
 
@@ -150,9 +176,9 @@ Date:   Fri Apr 2 23:46:14 2021 -0400
     Arquivos Novos
 ```
 
-Podemos analizar os dois commits com o comnado git log, sendo eles respectivamente os hashs 
-1º:  efc185c8f392c48b682608f08e690108da10b357
-Último: 6c85191d88c8aaa26081bbcd659f784f9ca42f8e
+Podemos analizar os dois commits com o comnado git log, sendo eles respectivamente os hashs   
+1º:  efc185c8f392c48b682608f08e690108da10b357  
+Último: 6c85191d88c8aaa26081bbcd659f784f9ca42f8e  
 
 Agora queremos voltar para o primeiro commit, para isso teremos duas possibilidades:
 1º possibilidade:
