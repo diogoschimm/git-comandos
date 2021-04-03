@@ -85,6 +85,8 @@ Para visualizar o histórico de commits devemos executar o seguinte comando
 ```console
 git log
 ou 
+git log --oneline --graph
+ou
 git log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short 
 ```
 
@@ -165,6 +167,14 @@ ou
 git reset --hard 6c85191d88c8aaa26081bbcd659f784f9ca42f8e
 ou
 git reset 6c85191d88c8aaa26081bbcd659f784f9ca42f8e 
+ou
+git reset --hard HEAD 
+ou
+git reset --hard HEAD^
+ou
+git reset --hard HEAD~1
+ou
+git reset --hard HEAD~2
 ```
 
 2º possibilidade:
