@@ -184,6 +184,8 @@ Para isso vamos usar o comando git revert
 
 ```console
 git revert HEAD --no-edit
+ou
+git revert 6c85191d88c8aaa26081bbcd659f784f9ca42f8e --no-edit
 ```
 
 
