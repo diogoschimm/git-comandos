@@ -214,6 +214,37 @@ ou
 git revert 6c85191d88c8aaa26081bbcd659f784f9ca42f8e --no-edit
 ```
 
+# Git Remote
+
+## Adicionar um repositório remoto
+
+```console
+git init
+git remote add origin <url-remote-repo>
+git remote add <repo-name> <url-remote-repo>
+```
+
+## Buscando uma branch do repositório remote
+
+```console
+git fetch origin develop
+git checkout develop
+```
+
+```console
+git init 
+git remote add origin https://github.com/diogoschimm/git-comandos.git
+
+git fetch origin develop
+git checkout develop
+
+git add .
+git status
+git commit -m "Commit"
+git push
+```
+
+
 
 
 
