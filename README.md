@@ -214,6 +214,15 @@ ou
 git revert 6c85191d88c8aaa26081bbcd659f784f9ca42f8e --no-edit
 ```
 
+# Branchs
+
+```console
+git branch <nome-branch>
+git checkou <nome-branch>
+ou
+git checkout -b <nome-branch>
+```
+
 # Git Remote
 
 ## Adicionar um repositório remoto
