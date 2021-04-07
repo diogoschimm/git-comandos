@@ -255,7 +255,7 @@ git push
 
 ## Criando a Branch Local e enviando a branch para o Remote
 
-```
+```console
 git init
 git remote add origin <rmeote_repo>
 git add .
