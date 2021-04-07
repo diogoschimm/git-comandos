@@ -218,7 +218,7 @@ git revert 6c85191d88c8aaa26081bbcd659f784f9ca42f8e --no-edit
 
 ```console
 git branch <nome-branch>
-git checkou <nome-branch>
+git checkout <nome-branch>
 ou
 git checkout -b <nome-branch>
 ```
@@ -251,6 +251,21 @@ git add .
 git status
 git commit -m "Commit"
 git push
+```
+
+## Criando a Branch Local e enviando a branch para o Remote
+
+```
+git init
+git remote add origin <rmeote_repo>
+git add .
+git commit -m "<mensagem>"
+git push origin master
+
+git checkout -b develop_2
+git add .
+git commit ...
+git push origin develop
 ```
 
 
