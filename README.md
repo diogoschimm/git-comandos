@@ -265,7 +265,7 @@ git push origin master
 git checkout -b develop_2
 git add .
 git commit ...
-git push origin develop
+git push origin develop_2
 ```
 
 
