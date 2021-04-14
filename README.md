@@ -268,6 +268,19 @@ git commit ...
 git push origin develop_2
 ```
 
+## Alias
+
+```console
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+ ```
+
 
 
 
